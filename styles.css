@@ -222,6 +222,12 @@ footer {
         border-radius: 150px; /* Optional: adds rounded corners */
     }
 
+ .custom-image {
+        max-width: 25%;
+        height: auto;
+        border-radius: 8px; /* Optional: adds rounded corners */
+    }
+
 .about-container {
     display: flex;
     align-items: center; /* Center the image and text vertically */
