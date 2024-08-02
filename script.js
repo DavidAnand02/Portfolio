@@ -1,19 +1,45 @@
 //index.js
 
-const hamburger = document.getElementById('hamburger'); 
-const menu = document.querySelector('.menu'); 
-
-hamburger.addEventListener('click', function () { 
-    const hamIcon = this.querySelector('.hamburger-icon'); 
-    const crossIcon = this.querySelector('.cross-icon'); 
-    if (hamIcon.style.display === "none") { 
-        hamIcon.style.display = "inline-block"
-        menu.style.display = "none"
-        crossIcon.style.display = "none"
-    } 
-    else { 
-        crossIcon.style.display = "inline-block"
-        hamIcon.style.display = "none"
-        menu.style.display = "block"
-    } 
+// Smooth scrolling for navigation
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
+
+// Skill bar animation
+window.addEventListener('scroll', () => {
+    const skillBars = document.querySelectorAll('.skill-bar .skill-level');
+    skillBars.forEach(bar => {
+        const barPos = bar.getBoundingClientRect().top;
+        const screenPos = window.innerHeight / 1.5;
+        if (barPos < screenPos) {
+            bar.style.width = bar.getAttribute('data-skill-level') + '%';
+        }
+    });
+});
+
+
+
+// Show project or experience details in a modal
+function showDetails(type, id) {
+    document.getElementById(`modal-${type}-${id}`).style.display = 'block';
+}
+
+// Close the modal
+function closeModal(type, id) {
+    document.getElementById(`modal-${type}-${id}`).style.display = 'none';
+}
+
+// Close the modal when clicking outside of it
+window.onclick = function (event) {
+    let modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+}
