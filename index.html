@@ -1,480 +1,475 @@
 <!--index.html-->
 
 <!DOCTYPE html> 
-<html lang="en"> 
 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0"> 
-    <title>My Portfolio</title> 
-    <link rel="stylesheet"
-        href= 
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity= 
-"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="responsive.css"> 
-</head> 
+<html lang="en">
 
-<body> 
-    <!-- Navbar header section -->
-    <header class="header"> 
-        <nav class="navbar"> 
-            <div class="logo"> 
-                <h2 class="logo-heading">Emrit Diyal</h2> 
-            </div> 
-            <div class="hamburger" id="hamburger"> 
-                <i class="fas fa-bars hamburger-icon"></i> 
-                <i class="fas fa-times cross-icon"></i> 
-            </div> 
-            <div class="menu"> 
-                <ul class="menu-list"> 
-                    <li class="menu-list-items"> 
-                        <a class="links" href="#home"> 
-                            Home 
-                        </a> 
-                    </li> 
-                    <li class="menu-list-items"> 
-                        <a class="links" href="#portfolio"> 
-                            Portfolio 
-                        </a> 
-                    </li> 
-                    <li class="menu-list-items"> 
-                        <a class="links" href="#about"> 
-                            About 
-                        </a> 
-                    </li> 
-                    <li class="menu-list-items"> 
-                        <a class="links" href="#services"> 
-                            Services 
-                        </a> 
-                    </li> 
-                    <li class="menu-list-items"> 
-                        <a class="links" href="#contact"> 
-                            Contact Me 
-                        </a> 
-                    </li> 
-                </ul> 
-            </div> 
-        </nav> 
-    </header> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
 
-    <!-- Main hero banner -->
-    <section id="home" class="hero"> 
-        <div class="intro"> 
-            <div class="headings"> 
-                <h3 class="greet-heading">Hello, I'm</h3> 
-                <h1 class="my-heading">Emrit Diyal</h1> 
-                <h4 class="sub-heading"> 
-                    A Software Engineer with 3 years of Experience. 
-                </h4> 
-            </div> 
-            <div class="intro-buttons"> 
-                <button class="btn common-btn">Hire Me</button> 
-                <button class="btn ghost-btn">Get Resume</button> 
-            </div> 
-        </div> 
-    </section> 
+<body>
+    <header id="home">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="intro">
+            <h1>David Moraes</h1>
+            <p>BSc (Hons) LSE Graduate</p>
+        </div>
+    </header>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio"> 
-        <div class="portfolio-heading"> 
-            <h1 class="my-heading text-center">Featured Portfolio</h1> 
-        </div> 
-        <div class="portfolio-content"> 
-            <div class="my-row"> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/designImage2.avif"
-                                alt="Web Design Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text">Web Design</h3> 
-                        <p class="small-para blue-text">Designing</p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/webDevelopment2.avif"
-                                alt="Web Development Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            Web Development 
-                        </h3> 
-                        <p class="small-para blue-text">Development</p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/SEOImage2.avif" alt="SEO Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text">SEO</h3> 
-                        <p class="small-para blue-text">Optimization</p> 
-                    </div> 
-                </div> 
-            </div> 
-            <div class="my-row"> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/contentImage2.avif"
-                                alt="Content Writting Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            Content Writing 
-                        </h3> 
-                        <p class="small-para blue-text">Writing</p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/wordpressImage2.avif"
-                                alt="Wordpress Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            WordPress Dev 
-                        </h3> 
-                        <p class="small-para blue-text"> 
-                            Content Management System 
-                        </p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/videoEditing2.avif"
-                                alt="Video Editing Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            Video Editing 
-                        </h3> 
-                        <p class="small-para blue-text">Editing</p> 
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-    </section> 
+  
+  <section id="about-me">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hello! I'm David Moraes, a BSc (Hons) Actuarial Science Graduate. I have a  passion for using AI and statistics to turn complex data into actionable insights. My experience spans multiple technologies—from Python and SQL to R and Excel—where I’ve tackled projects ranging from hospital database management systems to financial dashboards and ethical algorithm optimisation.
 
-    <!-- About Section -->
-    <section id="about" class="about"> 
-        <div class="about-text"> 
-            <h1 class="my-heading">About Me</h1> 
-            <p class="lead-para"> 
-                GeeksforGeeks is a leading platform 
-                that provides computer science 
-                resources and coding challenges for 
-                programmers and technology 
-                enthusiasts, along with interview 
-                and exam preparations for upcoming 
-                aspirants. With a strong emphasis on 
-                enhancing coding skills and knowledge, 
-                it has become a trusted destination 
-                for over 12 million plus registered 
-                users worldwide. The platform offers 
-                a vast collection of tutorials, practice 
-                problems, interview tutorials, articles, 
-                and courses, covering various domains 
-                of computer science. 
-            </p> 
-            <p> 
-                Our exceptional mentors hailing from top 
-                colleges & organizations have the 
-                ability to guide you on a journey from 
-                the humble beginnings of coding to 
-                the pinnacle of expertise. Under their 
-                guidance watch your skills flourish 
-                as we lay the foundation and help you 
-                conquer the world of coding. 
-            </p> 
-        </div> 
-        <div class="about-image"> 
-            <img src="./Images/heroImg2.avif" alt="About Image"> 
-        </div> 
-    </section> 
 
-    <!-- Services Section -->
-    <section class="services" id="services"> 
-        <div class="services-heading"> 
-            <h1 class="my-heading text-center">My Services</h1> 
-        </div> 
-        <div class="services-content"> 
-            <div class="my-row"> 
-                <div class="my-col"> 
-                    <div class="my-card"> 
-                        <div class="icon"> 
-                            <i class="fas fa-paint-brush"></i> 
-                        </div> 
-                        <h3 class="greet-heading blue-text">Web Design</h3> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card"> 
-                        <div class="icon"> 
-                            <i class="fa-solid fa-code"></i> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            Web Development 
-                        </h3> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card"> 
-                        <div class="icon"> 
-                            <i class="fas fa-chart-line"></i> 
-                        </div> 
-                        <h3 class="greet-heading blue-text">SEO</h3> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                    </div> 
-                </div> 
-            </div> 
-            <div class="my-row"> 
-                <div class="my-col"> 
-                    <div class="my-card"> 
-                        <div class="icon"> 
-                            <i class="fas fa-quote-left"></i> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            Content Writting 
-                        </h3> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining of websites. 
-                            It includes aspects such as web design, 
-                            web publishing, web programming, and 
-                            database management. It is the creation 
-                            of an application that works over the 
-                            internet i.e. websites. 
-                        </p> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining of websites. 
-                            It includes aspects such as web design, 
-                            web publishing, web programming, and 
-                            database management. It is the creation of an 
-                            application that works over the internet i.e. 
-                            websites. 
-                        </p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card"> 
-                        <div class="icon"> 
-                            <i class="fab fa-wordpress-simple"></i> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            WordPress Dev 
-                        </h3> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining of websites. 
-                            It includes aspects such as web design, 
-                            web publishing, web programming, and 
-                            database management. It is the creation 
-                            of an application that works over the 
-                            internet i.e. websites. 
-                        </p> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card"> 
-                        <div class="icon"> 
-                            <i class="fas fa-video"></i> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            Video Editing 
-                        </h3> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-    </section> 
+</p>
+          
+          </p> Each project I undertake is driven by a commitment to uncovering the stories within data, whether predicting rocket energy consumption or analyzing Reddit post performance. My goal is to bridge the gap between data and real-world application, delivering clear, impactful solutions that drive informed decisions.
 
-    <!-- Contact me section -->
-    <section class="contact" id="contact"> 
-        <div class="contact-heading"> 
-            <h1 class="my-heading text-center">Contact Me</h1> 
-        </div> 
-        <div class="contact-content"> 
-            <div class="contact-form-container"> 
-                <h1 class="greet-heading">Get In Touch</h1> 
-                <form class="contact-form"> 
-                    <input class="form-controls" type="text"
-                        placeholder="Your Name"> 
-                    <input class="form-controls" type="text"
-                        placeholder="Your Email"> 
-                    <input class="form-controls" type="text"
-                        placeholder="Your Phone"> 
-                    <textarea class="form-controls"
-                            placeholder="Write your message"
-                            name="message" id="" cols="30"
-                            rows="10"> 
-                    </textarea> 
-                    <input class="form-btn btn common-btn"
-                        type="submit" value="Send Message"> 
-                </form> 
-            </div> 
-            <div class="contact-details"> 
-                <h1 class="greet-heading">My Contact Details</h1> 
-                <div class="details"> 
-                    <h5 class="contact-heading">EMAIL</h5> 
-                    <p class="contact-text">example@gmail.com</p> 
-                </div> 
-                <div class="details"> 
-                    <h5 class="contact-heading">PHONE</h5> 
-                    <p class="contact-text">+91 0123456789</p> 
-                </div> 
-                <div class="details"> 
-                    <h5 class="contact-heading">FAX</h5> 
-                    <p class="contact-text">+91 0123456789</p> 
-                </div> 
-                <div class="details"> 
-                    <h5 class="contact-heading">ADDRESS</h5> 
-                    <p class="contact-text">San Francisco, CA</p> 
-                    <p>4th Floor8 Lower</p> 
-                    <p>San Francisco street, M1 50F</p> 
-                </div> 
-            </div> 
-        </div> 
-    </section> 
+I thrive on challenges and am continuously exploring new ways to leverage data for meaningful outcomes, always with a focus on innovation, precision, and practical results.  </p>
+          
+        </div>
+        <div class="about-image">
+            <img src=https://github.com/DavidAnand02/Portfolio/raw/e3aaf40824c62f56859dce1d1898069cb81f6591/Project%20Images/Firefly%2020240721212024.png alt="David Moraes" class="profile-image">
+        </div>
+    </div>
+</section>
 
-    <!-- Footer section -->
-    <footer class="footer"> 
-        <div class="footer-content text-center"> 
-            <h4> 
-                Copyright © 2023 All rights reserved | 
-                This portfolio website template is created 
-                by GeeksforGeeks. 
-            </h4> 
-            <div class="social-links"> 
-                <div class="footer-menu"> 
-                    <ul class="footer-menu-list"> 
-                        <li class="footer-list-items"> 
-                            <a class="footer-links" href="#"> 
-                                <i class="fab fa-facebook-f"></i> 
-                            </a> 
-                        </li> 
-                        <li class="footer-list-items"> 
-                            <a class="footer-links" href="#"> 
-                                <i class="fab fa-twitter"></i> 
-                            </a> 
-                        </li> 
-                        <li class="footer-list-items"> 
-                            <a class="footer-links" href="#"> 
-                                <i class="fab fa-instagram"></i> 
-                            </a> 
-                        </li> 
-                        <li class="footer-list-items"> 
-                            <a class="footer-links" href="#"> 
-                                <i class="fab fa-linkedin-in"></i> 
-                            </a> 
-                        </li> 
-                    </ul> 
-                </div> 
-            </div> 
-        </div> 
-    </footer> 
+  
+  
+  
+  
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src=https://github.com/DavidAnand02/Portfolio/raw/bd25cd8dc998b2dfe3c9e8a4f43efadb9ac35200/Project%20Images/hospital.jpg
+ alt="Hospital Management System" class="project-image">
+                <h3>Hospital and Physician Management Database</h3>
+                <a href="#" class="more-info" onclick="showDetails('project', 'hospital')">Read More</a>
+            </div>
 
-    <script src= 
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
-        integrity= 
-"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"> 
-    </script> 
-    <script src="script.js"></script> 
-</body> 
+            <div class="project-card">
+                <img src=https://github.com/DavidAnand02/Portfolio/raw/bd25cd8dc998b2dfe3c9e8a4f43efadb9ac35200/Project%20Images/coronavirus-2.tmb-1920v.jpg
+ alt="COVID-19 Dashboard" class="project-image">
+                <h3>COVID-19 Exploratory Data Analysis & Dashboard</h3>
+                <a href="#" class="more-info" onclick="showDetails('project', 'covid')">Read More</a>
+            </div>
 
+            <div class="project-card">
+                <img src=https://github.com/DavidAnand02/Portfolio/raw/bd25cd8dc998b2dfe3c9e8a4f43efadb9ac35200/Project%20Images/bike%20sales.jpg
+ alt="Bike Sales Dashboard" class="project-image">
+                <h3>Bike Sales Dynamic Dashboard & Visualization</h3>
+                <a href="#" class="more-info" onclick="showDetails('project', 'bike')">Read More</a>
+            </div>
+
+            <div class="project-card">
+                <img src=https://github.com/DavidAnand02/Portfolio/raw/bd25cd8dc998b2dfe3c9e8a4f43efadb9ac35200/Project%20Images/Life-Insurance-a8aee8e3024145a8b454ea19df030418.png
+ alt="Actuarial Survival Modelling" class="project-image">
+                <h3>Actuarial Survival Modelling</h3>
+                <a href="#" class="more-info" onclick="showDetails('project', 'survival')">Read More</a>
+            </div>
+
+            <div class="project-card">
+                <img src=https://github.com/DavidAnand02/Portfolio/raw/bd25cd8dc998b2dfe3c9e8a4f43efadb9ac35200/Project%20Images/YT.jpg
+ alt="YouTube Video Statistics" class="project-image">
+                <h3>YouTube Video Statistics Exploratory Data Analysis</h3>
+                <a href="#" class="more-info" onclick="showDetails('project', 'youtube')">Read More</a>
+            </div>
+
+            <div class="project-card">
+                <img src=https://github.com/DavidAnand02/Portfolio/raw/bd25cd8dc998b2dfe3c9e8a4f43efadb9ac35200/Project%20Images/rockets.jpg
+ alt="Rocket Energy Consumption" class="project-image">
+                <h3>Simulating Rocket Energy Consumption: Data Analysis and Predictive Modeling</h3>
+                <a href="#" class="more-info" onclick="showDetails('project', 'rocket')">Read More</a>
+            </div>
+
+            <div class="project-card">
+                <img src=https://github.com/DavidAnand02/Portfolio/raw/bd25cd8dc998b2dfe3c9e8a4f43efadb9ac35200/Project%20Images/ant.jpg
+ alt="Causal Models" class="project-image">
+                <h3>Using Causal Models to Align Discriminatory Path Optimization Algorithms with Ethical Standards</h3>
+                <a href="#" class="more-info" onclick="showDetails('project', 'aco')">Read More</a>
+            </div>
+
+            <div class="project-card">
+                <img src=https://github.com/DavidAnand02/Portfolio/raw/bd25cd8dc998b2dfe3c9e8a4f43efadb9ac35200/Project%20Images/fake%20images.jpg
+ alt="CNN Image Detection" class="project-image">
+                <h3>Real and Synthetic Image Detection with CNN's</h3>
+                <a href="#" class="more-info" onclick="showDetails('project', 'cnn')">Read More</a>
+            </div>
+
+            <div class="project-card">
+                <img src=https://github.com/DavidAnand02/Portfolio/raw/bd25cd8dc998b2dfe3c9e8a4f43efadb9ac35200/Project%20Images/reddit%20engagement%20likes.jpg
+ alt="Reddit Post Performance" class="project-image">
+                <h3>Analyzing Reddit Post Performance: Sentiment Analysis, Clustering, and Insights into User Engagement</h3>
+                <a href="#" class="more-info" onclick="showDetails('project', 'reddit')">Read More</a>
+            </div>
+
+            <div class="project-card">
+                <img src=https://github.com/DavidAnand02/Portfolio/raw/bd25cd8dc998b2dfe3c9e8a4f43efadb9ac35200/Project%20Images/medicine%20market.jpg alt="Drug Review Sentiment" class="project-image">
+              
+                <h3>Text Analysis for Drug Review Sentiment and Market Gap Identification</h3>
+                <a href="#" class="more-info" onclick="showDetails('project', 'drug')">Read More</a>
+            </div>
+
+          
+          
+        </div>
+    </section>
+
+    <section id="experience">
+      
+        <h2>Experience</h2>
+        <div class="experience-grid">
+            <div class="experience-card">
+              <img src=https://github.com/DavidAnand02/Portfolio/raw/bd25cd8dc998b2dfe3c9e8a4f43efadb9ac35200/Project%20Images/childcare.jpg alt="Student Consultant" class="project-image">
+                <h3>Grove Finance Start-Up</h3>
+                <span class="date">March 2024</span>
+               
+                <a href="#" class="more-info" onclick="showDetails('experience', 'grove')">Read More</a>
+            </div>
+
+            <div class="experience-card">
+              <img src=https://github.com/DavidAnand02/Portfolio/raw/bd25cd8dc998b2dfe3c9e8a4f43efadb9ac35200/Project%20Images/stocks.jpg alt="Predicted future correlations" class="project-image">
+                <h3>1st Place in the Inter-American Development Bank Challenge</h3>
+                <span class="date">February 2024</span>
+                
+                <a href="#" class="more-info" onclick="showDetails('experience', 'iadb')">Read More</a>
+            </div>
+          
+          <div class="experience-card">
+              <img src=https://github.com/DavidAnand02/Portfolio/raw/551a60b97a1a3def7ecaa63a3f177f7ad48d0dfc/Project%20Images/climate%20change.jpg alt="Evaluated potential solutions" class="project-image">
+                <h3>Finalist at Actuarial Science Case Competition: Interplay between GI/Reinsurance and Climate Change</h3>
+                <span class="date">February 2021</span>
+                
+                <a href="#" class="more-info" onclick="showDetails('experience', 'case')">Read More</a>
+            </div>
+          
+          
+          
+
+            <!-- Additional experience cards can be added here -->
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-grid">
+            <div class="education-card">
+              <img src=https://github.com/DavidAnand02/Portfolio/raw/bd25cd8dc998b2dfe3c9e8a4f43efadb9ac35200/Project%20Images/lse.jpg alt="Graduate Studies" class="project-image">
+                <h3>BSc (Hons) Actuarial Science</h3>
+                <span class="date">London School of Economics & Political Science</span>
+                <p>Sep 2021 - 2024</p>
+                <p>Relevant Courses: Inferential & Descriptive Statistics, Calculus & Linear Algebra, Corporate Finance, Financial & Management Accounting, Survival Modelling, Actuarial Financial Investigations, Machine Learning, AI, Ethics for Data Science & Databases.</p>
+            </div>
+
+            <div class="education-card">
+              <img src=https://github.com/DavidAnand02/Portfolio/raw/4ca32a420527ed2ce70ddc3311db768edce8970b/Project%20Images/st%20chris%20logo.png alt="High School Education" class="project-image">
+                <h3>International A-Levels</h3>
+                <span class="date">Pearson Edexcel & Oxford AQA</span>
+                <p>Mathematics - A*, Further Mathematics - A, Economics - A | Physics - A*</p>
+            </div>
+
+            <!-- Additional education cards can be added here -->
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          
+            <div class="skill-bar">
+                <div class="skill-name">Python Programming</div>
+                <div class="skill-level" data-skill-level="90"></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-name">R Programming</div>
+                <div class="skill-level" data-skill-level="90"></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-name">SQL 
+              </div>
+                <div class="skill-level" data-skill-level=90></div>
+            </div>
+          <div class="skill-bar">
+                <div class="skill-name">Excel</div>
+                <div class="skill-level" data-skill-level="90"></div>
+          
+            <div class="skill-bar">
+                <div class="skill-name">Tableau</div>
+                <div class="skill-level" data-skill-level="70"></div>
+              
+              
+              <div class="skill-bar">
+                <div class="skill-name">MongoDB
+                </div>
+                <div class="skill-level" data-skill-level="70"></div>
+            <!-- Add more skill bars as needed -->
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Download my resume <a href="https://github.com/DavidAnand02/Portfolio/raw/0dfc1251fd21ab0de82d2ba03c23fafd6a466f8c/David's%20Resume.pdf" target="_blank">here</a>.</p>
+    </section>
+
+    <section id="contact">
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        <ul class="contact-info">
+            <li>Email: moraes.david02@gmail.com</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/david-moraes-a70289116/" target="_blank">David's Linkedin Profile</a></li>
+          <li>Number: +44 7470258187 </li>
+          
+        </ul>
+    </div>
+</section>
+
+
+    <footer>
+        <p>&copy; 2024 David Moraes</p>
+    </footer>
+
+    <!-- Modals for detailed views -->
+    <div id="modal-project-hospital" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project', 'hospital')">&times;</span>
+            <h2>Hospital and Physician Management Database</h2>
+            <p><strong>Date:</strong> January 2024</p>
+            <p><strong>Project Motivation:</strong> Blank for now</p>
+            <p><strong>Project Details:</strong></p>
+            <ul>
+                <li>Executed MongoDB queries to retrieve and display essential information about doctors, patients, finances etc…</li>
+                <li>Developed an aggregation pipeline to calculate total revenue by patient, considering different procedure types.</li>
+                <li>Visualised temporal queries e.g health evolution of patients, using Matplotlib</li>
+                <li>Performed queries involving update/delete structures, calculations, views, retrieve, filter and aggregate</li>
+            </ul>
+            <p>For more details, visit the <a href=https://github.com/DavidAnand02/Portfolio-Projects/blob/b140368111c1e512a491e04ac34caa0f81fa30e0/Hospital%20and%20Physician%20Management%20Database.html target="_blank">GitHub repository</a>.</p>
+        </div>
+    </div>
+
+    <div id="modal-project-covid" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project', 'covid')">&times;</span>
+            <h2>COVID-19 Exploratory Data Analysis & Dashboard</h2>
+            <p><strong>Date:</strong> June 2023</p>
+            <p><strong>Project Motivation:</strong> Blank for now</p>
+            <p><strong>Project Details:</strong></p>
+            <ul>
+                <li>Utilized joins, CTEs, temp tables, and data type conversions for efficient data retrieval and aggregation.</li>
+                <li>Applied window functions and aggregate functions to calculate death & infection % and rolling counts of vaccinations.</li>
+                <li>Developed a view to simplify data access and integrated with Tableau, creating a dashboard.</li>
+            </ul>
+            <p>For more details, visit the <a href=https://github.com/DavidAnand02/Portfolio-Projects/blob/main/Covid%20Visualisation%20SQL%20Project.sql target="_blank">GitHub repository</a>.</p>
+          
+          <p>You can see the dashboard here <a href=https://public.tableau.com/views/CovidDashboard_16875981608420/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link target="_blank">Tableau Dashboard</a>.</p>
+        </div>
+    </div>
+
+   <div id="modal-project-bike" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('project', 'bike')">&times;</span>
+        <h2>Bike Sales Dynamic Dashboard & Visualization</h2>
+        <!-- Image goes here -->
+        <img src=https://github.com/DavidAnand02/Portfolio/raw/56574f55c3004e8b882f3c1c2a56804bed29793a/Project%20Images/excel%20bike%20dashboard.png alt="Bike Dashboard" class="project-image">
+        <p><strong>Date:</strong> June 2023</p>
+        <p><strong>Project Motivation:</strong> Blank for now</p>
+        <p><strong>Project Details:</strong></p>
+        <ul>
+            <li>Ensured data quality of 1000 rows by removing duplicates & null values.</li>
+            <li>Utilized pivot tables and charts to visually represent trends in data, enabling clear and insightful analysis.</li>
+            <li>Integrated slicers to customize the map view, enhancing user interaction and exploration.</li>
+        </ul>
+        
+    </div>
+</div>
+
+
+    <div id="modal-project-survival" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project', 'survival')">&times;</span>
+            <h2>Actuarial Survival Modelling</h2>
+            <p><strong>Date:</strong> May 2023</p>
+            <p><strong>Project Motivation:</strong> Blank for now</p>
+            <p><strong>Project Details:</strong></p>
+            <ul>
+                <li>Performed optimization in R studio with the optim function to find MLE’s.</li>
+                <li>Applied statistical tests to analyze and interpret data, including survival analysis and Cox proportional hazards modeling.</li>
+                <li>Cleaned, processed data and used survival package in R studio.</li>
+            </ul>
+            <p>For more details, visit the <a href=https://github.com/DavidAnand02/Portfolio-Projects/blob/main/Actuarial%20Financial%20Investigations%20R%20Assessment.R target="_blank">GitHub repository</a>.</p>
+        </div>
+    </div>
+
+    <div id="modal-project-youtube" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project', 'youtube')">&times;</span>
+            <h2>YouTube Video Statistics Exploratory Data Analysis</h2>
+            <p><strong>Date:</strong> July 2023</p>
+            <p><strong>Project Motivation:</strong> Blank for now</p>
+            <p><strong>Project Details:</strong></p>
+            <ul>
+                <li>Pulled data on channel statistics and video comments using YouTube API, used pandas to manipulate data frames.</li>
+                <li>Imported seaborn and matplotlib to visualize video performance, duration, and engagement metrics.</li>
+                <li>Applied NLTK to create a word cloud from video titles, communicating past trends.</li>
+            </ul>
+            <p>For more details, visit the <a href=https://github.com/DavidAnand02/Portfolio-Projects/blob/main/ytanalysis.ipynb target="_blank">GitHub repository</a>.</p>
+        </div>
+    </div>
+
+    <div id="modal-project-rocket" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project', 'rocket')">&times;</span>
+            <h2>Simulating Rocket Energy Consumption: Data Analysis and Predictive Modeling</h2>
+            <p><strong>Date:</strong> January 2024</p>
+            <p><strong>Project Motivation:</strong> Blank for now</p>
+            <p><strong>Project Details:</strong></p>
+            <ul>
+                <li>Created a dataset with variables like rocket efficiency, payload weight, and mission objectives. Used this data to calculate energy consumption.</li>
+                <li>Applied different models (GAM, Decision Tree, Random Forest, XGBoost) to predict energy consumption and evaluated their performance with residual plots and mean squared error.</li>
+                <li>Examined how changes in data (concept and covariate shifts) affected model accuracy, and tested how well the models adapted to these changes.</li>
+            </ul>
+            <p>For more details, visit the <a href=https://github.com/DavidAnand02/Portfolio-Projects/blob/main/Rocket%20Energy%20Consumption.html target="_blank">GitHub repository</a>.</p>
+        </div>
+    </div>
+
+    <div id="modal-project-aco" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project', 'aco')">&times;</span>
+            <h2>Using Causal Models to Align Discriminatory Path Optimization Algorithms with Ethical Standards</h2>
+            <p><strong>Date:</strong> January 2024</p>
+            <p><strong>Project Motivation:</strong> Blank for now</p>
+            <p><strong>Project Details:</strong></p>
+            <ul>
+                <li>Evaluated Ant Colony Optimization (ACO) algorithms for fairness using the Belmont principles.</li>
+                <li>Implemented causal models to correct discriminatory biases in path-finding algorithms, improving resource allocation equity.</li>
+                <li>Conducted simulations to demonstrate how causal models can reduce socio-economic disparities in algorithmic outcomes.</li>
+                <li>Developed visualizations to illustrate the impact of algorithm adjustments on resource distribution and fairness.</li>
+            </ul>
+            <p>For more details, visit the <a href=https://github.com/DavidAnand02/Portfolio-Projects/blob/main/Align%20Discriminatory%20Path%20Optimization%20Algorithms.html target="_blank">GitHub repository</a>.</p>
+        </div>
+    </div>
+
+    <div id="modal-project-cnn" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project', 'cnn')">&times;</span>
+            <h2>Real and Synthetic Image Detection with CNN's</h2>
+            <p><strong>Date:</strong> May 2024</p>
+            <p><strong>Project Motivation:</strong> Blank for now</p>
+            <p><strong>Project Details:</strong></p>
+            <ul>
+                <li>Trained CNN models to classify human-made and AI-made images with a training set of 100,000 images from the CIFAKE dataset.</li>
+                <li>Evaluated performance of models using ROC-AUC curves and confusion matrices.</li>
+                <li>Reported on the comparative performance of the models as well as presented the model architecture to a lay audience.</li>
+            </ul>
+            <p>For more details, visit the <a href=https://github.com/DavidAnand02/Portfolio-Projects/blob/main/AI%20Img%20Detection%20-%20Paper.pdf target="_blank">GitHub repository</a>.</p>
+        </div>
+    </div>
+
+    <div id="modal-project-reddit" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project', 'reddit')">&times;</span>
+            <h2>Analyzing Reddit Post Performance: Sentiment Analysis, Clustering, and Insights into User Engagement</h2>
+            <p><strong>Date:</strong> May 2024</p>
+            <p><strong>Project Motivation:</strong> Blank for now</p>
+            <p><strong>Project Details:</strong></p>
+            <ul>
+                <li>Comprehensive Data Preprocessing: Utilized unnest_tokens to tokenize text data, allowing for detailed sentiment analysis and feature extraction from Reddit posts.</li>
+                <li>Sentiment Analysis with AFINN Lexicon: Applied sentiment analysis to Reddit posts using the AFINN lexicon, calculating individual sentiment scores that provide insights into user emotions and engagement.</li>
+                <li>Feature Engineering and PCA: Performed principal component analysis (PCA) on post features to reduce dimensionality and visualize data clusters effectively.</li>
+                <li>Cluster Analysis: Applied K-means clustering to identify distinct groups of posts and analyze common themes and engagement patterns.</li>
+            </ul>
+            <p>For more details, visit the <a href=https://github.com/DavidAnand02/Portfolio-Projects/blob/main/Reddit%20Posts.qmd target="_blank">GitHub repository</a>.</p>
+        </div>
+    </div>
+
+  
+  <div id="modal-project-drug" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project', 'drug')">&times;</span>
+            <h2>Text Analysis for Drug Review Sentiment and Market Gap Identification</h2>
+            <p><strong>Date:</strong> May 2024</p>
+            <p><strong>Project Motivation:</strong> Blank for now</p>
+            <p><strong>Project Details:</strong></p>
+            <ul>
+                <li>Text Preprocessing: Utilized quanteda and tm packages to clean, tokenize, and preprocess a large dataset of 161,297 drug reviews, including removal of stopwords, punctuation, and stemming.</li>
+                <li>Implemented Sentiment Analysis and Visualization: Applied the AFINN sentiment dictionary to analyze sentiment in drug reviews and created visualizations using ggplot2 to highlight areas of high and low patient satisfaction. </li>
+                <li>Performed Topic Modeling with LDA: Conducted Latent Dirichlet Allocation (LDA) to uncover key themes in migraine prevention drug reviews, revealing insights into drug efficacy, side effects, and treatment duration. 
+</li>
+                <li>Conducted Market Gap Analysis: Evaluated sentiment and topic modeling results to identify potential market gaps in migraine prevention treatments, providing actionable recommendations for new product development. 
+</li>
+              <li>Demonstrated Advanced Text Analysis Techniques: Showcased expertise in sentiment analysis, topic modeling, and semantic analysis to drive actionable insights for the pharmaceutical industry.  
+</li>
+              
+              
+            </ul>
+            <p>For more details, visit the <a href=https://github.com/DavidAnand02/Portfolio-Projects/blob/main/Patient%20Health%20and%20Drug%20Data.qmd target="_blank">GitHub repository</a>.</p>
+        </div>
+    </div>
+  
+  
+  
+    <div id="modal-experience-grove" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('experience', 'grove')">&times;</span>
+            <h2>Grove Finance Start-Up</h2>
+            <p><strong>Date:</strong> March 2024</p>
+            <p>●Reported on how direct lending and equity release can be leveraged in the UK’s childcare industry.<p>
+<p>●Researched Grove’s industry, market gaps, competitors, target demographic, trends and opportunities.<p>
+<p>●Collaborated with an international team to present report to founder.</p>
+            
+        </div>
+    </div>
+
+    <div id="modal-experience-iadb" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('experience', 'iadb')">&times;</span>
+            <h2>1st Place in the Inter-American Development Bank Challenge</h2>
+            <p><strong>Date:</strong> February 2024</p>
+            <p>●Contrasted ensemble correlation models for stock returns of financial and non-financial companies across Latin America.<p>
+<p>●Accounted for significant economic, socio-political and financial indicators using AIC, Ridge and Lasso regression.<p>
+<p>●Predicted future correlations across several industries using a neural net & presented statistically significant findings.</p>
+            <p>For more details, visit the <a href=https://www.lse.ac.uk/Statistics/Current-Students/Practitioners-Challenge target="_blank">LSE Website</a>.</p>
+        </div>
+    </div>
+
+
+<div id="modal-experience-case" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('experience', 'case')">&times;</span>
+            <h2>Finalist at Actuarial Science Case Competition: Interplay between GI/Reinsurance and Climate Change</h2>
+            <p><strong>Date:</strong> February 2024</p>
+            <p>●Researched Reinsurer responses to physical risk, litigative and transition risks of climate change.<p>
+<p>●Evaluated potential solutions and products that actuaries can help design to tackle climate change.<p> 
+<p>●Presented climate change impacts on general reinsurers to climate scientists.</p>
+            
+        </div>
+    </div>
+
+
+
+
+    <script src="scripts.js"></script>
+</body>
 </html>
+
+
