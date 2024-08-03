@@ -248,3 +248,23 @@ footer {
     margin-right: 10px; /* Adjust the value to shift the image to the right */
     flex-direction: row-reverse; /* Text on the right, image on the left */
 }
+
+
+
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column; /* Stacks the links vertically on smaller screens */
+        align-items: center;    /* Centers the links horizontally */
+    }
+
+    header nav a {
+        padding: 15px; /* Adjusts padding to ensure enough clickable area */
+        font-size: 18px; /* Increases the font size for better readability */
+    }
+}
+
+
+
+
