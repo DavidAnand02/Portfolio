@@ -68,13 +68,15 @@ h2 {
     padding-bottom: 10px;
 }
 
-.project-carousel, .experience-grid, .education-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+/* Container for the sections that hold multiple items */
+.project-carousel, .experience-carousel, .education-carousel {
+    display: grid;
     gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-between;
 }
 
+/* Individual card styling */
 .project-card, .experience-card, .education-card {
     background: #1e1e1e;
     border: 1px solid #333;
@@ -83,6 +85,11 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
     transition: transform 0.3s ease;
 }
+
+.project-card:hover, .experience-card:hover, .education-card:hover {
+    transform: scale(1.05);
+}
+
 
 .project-card:hover, .experience-card:hover, .education-card:hover {
     transform: scale(1.05);
