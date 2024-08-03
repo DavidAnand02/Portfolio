@@ -266,5 +266,17 @@ footer {
 }
 
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;    /* Center-align the content */
+        text-align: center;     /* Center the text for better readability */
+    }
 
+    .profile-image {
+        max-width: 50%; /* Increase the size of the image slightly */
+        margin-bottom: 20px; /* Add some spacing below the image */
+    }
+}
 
