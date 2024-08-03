@@ -26,12 +26,14 @@ header {
     overflow: hidden;
 }
 
+/* Navigation */
 header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Allows the items to wrap in a new row if necessary */
 }
 
 header nav a {
@@ -39,6 +41,7 @@ header nav a {
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    padding: 10px; /* Adds spacing around links */
 }
 
 header .intro {
